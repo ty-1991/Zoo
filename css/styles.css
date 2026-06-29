@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #c37575;
+  background: #fbf7f0;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+/* HEADINGS — a clear hierarchy by size and colour, in order, no skipped levels. */
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+  color: #6b3f1d;
+  border-bottom: 2px solid #e7d8c4; /* border sits inside the box; padding gives it room */
+  padding-bottom: 0.25rem;
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+ul {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+h2 {
+  font-size: 1.4rem;
+  margin: 2rem 0 0.75rem;
+  color: #6b3f1d;
+  border-bottom: 2px solid #e7d8c4; /* border sits inside the box; padding gives it room */
+  padding-bottom: 0.25rem;
+  text-align: center;
+}
+
+/* The header's intro paragraph reads as a lead — descendant selector, low specificity. */
+header p {
+  font-size: 1.05rem;
+  color: #c37575;
+}
+
+/* MEDIA — an <img> is inline by default, which leaves an odd gap and can overflow.
+   display:block fixes the gap; max-width keeps it inside the column. */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding bottom: 1rem;
+}
+
+/* LISTS — a little breathing room between items. */
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+/* THE TIP ASIDE — this is where the class="tip" hook from the HTML capstone
+   finally earns its keep. One justified class; everything else is a plain tag. */
+.tip {
+  background: #fff3da;
+  border-left: 4px solid #e0a72e;
+  border-radius: 4px;
+  padding: 0.75rem 1.25rem; /* padding, not margin: the gold fills this space */
+  margin: 2rem 0; /* margin pushes the neighbours away */
+}
+
+/* The tip's own heading shouldn't carry the section underline or top gap. */
+.tip h2 {
+  margin-top: 0;
+  border-bottom: none;
+  font-size: 1.15rem;
+}
+
+/* FOOTER — quiet, separated from the content above it. */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e7d8c4;
+  font-size: 0.9rem;
+  color: #7a7068;
+}
